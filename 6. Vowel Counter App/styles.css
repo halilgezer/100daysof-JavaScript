@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap");
+
+:root {
+  --white: #fff;
+  --black: #1c2b2d;
+  --blue: #31326f;
+  --light-blue: #005490;
+  --color-primary: #9d0191;
+  --color-sec: #db6400;
+  --grey: #eee;
+  --dark-grey: #222831;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: var(--light-blue);
+}
+
+.main{
+  width: 100% ;
+  height: 100vh ;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  max-width: 900px;
+  width: 40rem;
+  height: 22rem;
+  margin: 21rem auto;
+  padding: 5rem 3rem ;
+  background-color:white ;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+.container h3{
+  margin-bottom: 2rem;
+}
+.container input{
+  border:  none;
+  outline: none;
+  border-bottom:  2px solid var(--color-sec);
+  width: 20rem;
+  height: 4rem;
+  font-size: 1.6rem;
+}
+.container button{
+  border:  none;
+  outline: none;
+  width: 10rem;
+  height: 4rem;
+  background-color: var(--color-primary);
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+
+#input ::placeholder{
+  font-size: 2rem;
+}
+
+.container #result{
+  font-size: 2rem;
+  text-align: center;
+  margin: 2rem 0 2rem 0;
+  border:  1px solid grey;
+  display: none;
+}
