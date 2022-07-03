@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day 19 Tip Calculator</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="calc">
+        <h2>Tip calculator</h2>
+        <form action="" class="form">
+          <div>
+            <label for="bill">Bill:</label>
+            <input type="text" placeholder="$" name="bill" class="bill">
+          </div>
+          <div>
+            <label for="rate-service">Rate Servise:</label>
+            <select name="rate-service" class="rate">
+              <option selected hidden disabled value="0">
+                -- Select an option --
+              </option>
+              <option value="0.15">15% - Excellent </option>
+              <option value="0.1">10% - Good </option>
+              <option value="0.05">5% - Fair </option>
+
+            </select>
+          </div>
+          <button type="reset" class="btn-reset"> Reset</button>
+          <button type="button" class="btn">Calculate</button>
+          <p class="error">Please enter bill and rate service.</p>
+          
+        </form>
+
+        <div class="result">
+          <p class="tip">Tip Amount : $0</p>
+          <p class="total">Total Amount : $0</p>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

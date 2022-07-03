@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap");
+
+:root {
+  --white: #fff;
+  --black: #1c2b2d;
+  --blue: #31326f;
+  --light-blue: #005490;
+  --color-primary: #9d0191;
+  --color-sec: #db6400;
+  --grey: #eee;
+  --dark-grey: #222831;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+p {
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
+img {
+  width: 100%;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+section {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.2));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box{
+  width: 40rem;
+  background-color: var(--light-blue);
+  min-height: 20rem;
+  padding: 2rem 3rem;
+}
+.box h1 {
+  font-size: 2rem;
+  color: white;
+}
+
+.box form  {
+  font-size: 1.5rem;
+  color: white;
+}
+.box form label {
+  display: block ;
+  margin-top: 0.8rem;
+
+}
+#weight , #height {
+  width: 100%;
+  height: 3rem;
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+  border: none;
+  outline: none;
+  border-radius: 0.5rem;
+}
+
+.btn {
+  width: 100%;
+  height: 3.5rem;
+  border: none;
+  outline: none;
+  border-radius: 0.8rem;
+  margin: 0.8rem 0;
+  background-color: var(--color-sec);
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+.result {
+  width: 100%;
+  height: 3.5rem;
+  border: none;
+  outline: none;
+  border-radius: 0.8rem;
+  margin: 0.8rem 0;
+  background-color: red;
+  color: white;
+  font-size: 1.5rem;
+  padding: 0.5rem 1rem;
+  display: none;
+  transition: all 0.5s;
+}
+.reset {
+  width: 20%;
+  height: 3.5rem;
+  margin-bottom: 0.8rem;
+  display: none;
+  cursor: pointer;
+  transition: all 0.5s;
+
+}
